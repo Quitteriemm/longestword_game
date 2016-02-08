@@ -1,0 +1,14 @@
+<h1>Startgames#game</h1>
+<h2>Welcome to the longest word-game!</h2>
+<p>Here is your grid</p>
+<%= @grid_generate.join(' ') %>
+<% @start_time = Time.now.strftime("%FT%T%:z") %>
+
+<form action="/score">
+<input type="hidden" name="start_time" value= <%= @start_time %>>
+<input type="hidden" name="grid_generate" value= '<%= @grid_generate.join(' ') %>'>
+  <label for="question">What's your best shot?</label>
+  <input type="text" id="question" name="query" placeholder="Your guess">
+  <input type="submit" value="Go on!">
+
+</form>
