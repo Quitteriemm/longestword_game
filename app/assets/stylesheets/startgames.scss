@@ -1,6 +1,50 @@
 // Place all the styles related to the startgames controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.h1 {
+body {
+  margin: 0;
+  font-family: Open-sans, sans-serif;
+}
+h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.padded {
+  padding: 100px 0;
+}
+
+.wrapper {
+    background: #F4F4F4;
+    color: #332732;
+    padding:150px 0;
+    height: 0,1px;
+    text-align: center
+
+}
+
+hr {
+  margin-top: 30px;
+  border-width: 0px;
+  padding: 0;
+
+}
+
+
+.content{
+  background: white;
+  padding: 50px;
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 300px;
+  justify-content: center;
+
+}
+#grid {
+  color: #2C78AD;
 
 }

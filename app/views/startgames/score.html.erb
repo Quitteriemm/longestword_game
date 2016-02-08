@@ -1,8 +1,15 @@
-<h1>Startgames#score</h1>
-<h2>Now here is your result!</h2>
-<p>Your word is: <%= @query.capitalize! %></p>
-<p>Time taken to answer: <%= @time %></p>
-<p>Translation: <%= @translation %></p>
-<p>Your score: <%= @score %></p>
-<p>Message: <%= @message %></p>
+
+<div class="wrapper padded">
+  <div class="content">
+  <h1>Startgames#score</h1>
+  <p>Now here is your result!</p>
+  <p id="grid">Your word is: <%= @query.capitalize! %></p>
+  <p id="grid">Time taken to answer: <%= @time %></p>
+  <p id="grid">Translation: <%= @translation %></p>
+  <p id="grid">Your score: <%= @score %></p>
+  <p id="grid">Message: <%= @message %></p>
+
+
+  </div>
+</div>
 
