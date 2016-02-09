@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "startgames#game"
   get 'game' => 'startgames#game'
 
   get 'score' => 'startgames#score'

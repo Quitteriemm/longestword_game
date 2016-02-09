@@ -18,7 +18,7 @@ require 'json'
 
   def score
     @query = params[:query]
-    p @grid_generate = params[:grid_generate].split(' ')
+    @grid_generate = params[:grid_generate].split(' ')
     @score = 0
     @end_time = Time.now.strftime("%FT%T%:z")
     # @time = Time.parse(params[:start_time]) - Time.parse(params[:end_time])
@@ -26,7 +26,7 @@ require 'json'
 
     @response = "http://api.wordreference.com/0.8/80143/json/enfr/#{@query}"
     @json = JSON.parse(open(@response).read)
-    p @translation = @json['term0']['PrincipalTranslations']['0']['FirstTranslation']['term'] unless @json["Error"]
+    @translation = @json['term0']['PrincipalTranslations']['0']['FirstTranslation']['term'] unless @json["Error"]
 
     if @translation
       if included?(@query.upcase, @grid_generate)
